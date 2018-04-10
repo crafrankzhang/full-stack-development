@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+   
+p{
+    color:red;
+    padding: 20px 30px;
+   padding-top:30px;
+}
+
+
+.large{
+    font-size: 300%;
+}
+
+
+#green{
+    color:green;
+}
+
+.underline{
+
+    text-decoratioin:underline;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+div{
+    background-color: #f0f0f2;
+    width:300px;
+    height:500px;
+}
+.box1
+{
+    background-color: yellow;
+    width:300px;
+    height:500px;
+    float:left;
+    position: relative;
+    top:80px;
+    left: 100px;
+    z-index:1;
+
+
+}
+.box2
+{
+    background-color: yellow;
+    width:300px;
+    height:200px;
+    float:right;
+
+}
+.clear
+{
+    float:left;
+    position: fixed;
+    z-index: 2;
+    margin:50px 80px 100px 200px;
+    padding: 20px;
+
+}
+.floatleft
+{
+    float:left;
+}
+    </style>    
+</head>
+
+<body>
+<div class="box1">
+   <p class="large">this is the first line</p>
+</div>
+
+
+
+<div class="box2">
+  <p id="green" class="large">this is the second line</p>
+
+</div>
+
+
+
+<div class="clear" >
+<p class="floatleft"> the third line <span id="green"class="underline large bold">world</span> number </p>
+
+
+</div>
+</body>
+</html>

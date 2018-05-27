@@ -9,24 +9,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
 
+     #circle{
+     	width:200px;
+     	height:200px;
+     	border-radius:100px;
+     	background-color: red;
+
+     }
+
+
+
     </style>    
 </head>
 
 <body>
 
 
-<button id="myButton">click</button>
+<button id="textChanger">change first div text</button>
 <p id="text">Some text</p>
+<div id='firstDiv'>this is some text</div>
+
+
+<button id="textAppender">append some text</button>
+
+<div id='secondDiv'>this is some text</div>
+
+
+<button id="textCreater">Create some text</button>
+
+<div id='emptyDiv'></div>
+<div id=circle> </div>
+
+
+<p> what is a weather</p>
+<input id="weather"/>
+<button id="But">Submit</button>
+
+<input id="myInput" type ="text "value='text'/>
+
+<button id="change!">chage the text</button>
+
+<div id ="changeText"> this is some text<div>
+
 
 <script type="text/javascript">
 
+var circle="circle";
 
 alert("page loading");
 alert(document.getElementById("text").innerHTML);
-document.getElementById("myButton").onclick=function()
+document.getElementById("textChanger").onclick=function()
 {
-    alert("hi");
+    document.getElementById("firstDiv").innerHTML='this is awesome!';
+
 }
+
+document.getElementById("textAppender").onclick=function()
+{
+    document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML+"great";
+
+
+}
+document.getElementById("textCreater").onclick=function()
+{
+    document.getElementById("emptyDiv").innerHTML="<ul><li>cat</li><li>dog</li></ul>";
+
+
+}
+document.getElementById("circle").onclick=function()
+{
+    document.getElementById(circle).style.display="none";
+
+
+}
+var newTect=document.getElementById("myInput").value;
+document.getElementById("change!").onclick=function()
+{
+	newTect=document.getElementById("myInput").value;
+    document.getElementById("changeText").innerHTML=newTect;
+
+
+}
+var x="1";
+if (x==1){
+	//alert("x is 1");
+}
+else 
+{
+	//alert("x is not 1");
+}
+
+document.getElementById("But").onclick=function()
+{
+	if(document.getElementById("weather").value=="rain"){
+		alert("It is rain");
+
+	}
+	else
+	{
+		alert("it is not rain");
+	}
+
+}
+
+
+
 
 </script>
 

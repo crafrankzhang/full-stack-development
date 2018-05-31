@@ -118,7 +118,65 @@ interviewQuwstion('teacher')('mark');
 
 */
 
-//lecture : IFEE 
+//lecture : IFEE  for data parivacy 
+
+/*
+function game(){
+
+	var score = Math.random();
+	console.log(score);
+}
+
+games();
+
+(function (){
+	var score = Math.random();
+	console.log(score);
+
+})();
+
+
+(function (goodluck){
+	var score = Math.random();
+	console.log(score - goodluck);
+
+})(5);
+
+*/
+
+// lecture : closures
+
+/*
+
+function interviewQuwstion(job){
+
+	return function (name){
+	if (job === 'designer'){
+		
+			console.log(name + 'can you design ios ?');
+		
+	} else if (job === 'teacher'){
+		
+			console.log(name + 'what sujbeact you teach?');
+
+		
+	}else {
+
+
+		
+
+			console.log('hello' + name + 'what do you do ?');
+		
+	
+}
+	}
+
+*/
+
+
+//lecture : Bind  call apply
+ 
+
 
 
 

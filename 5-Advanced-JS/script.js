@@ -177,11 +177,52 @@ function interviewQuwstion(job){
 //lecture : Bind  call apply
  
 
+ var john = {
+ 	 name : 'john',
+ 	 yearOfBirth: 1990;
+ 	 job: 'teacher',
+ 	 presention : function(style , formmm){
+ 	 	console.log(style,formmm);
+ 	 }
+
+ };
+
+ var emil = {
+ 	name: 'emil',
+ 	yearOfBirth: 1990,
+ 	job:'cook'
+ };
+
+ john.presention.call(emil , 'sss','ssss');
+ john.presention.apply(emil , 'sss','ssss');
+  var johnfr = john.presention.bind('john','sss');
+  johnfr('asd');
 
 
 
+ar years = ['1992','1223','2342','2343'];
 
+function arrayCalc(arr , fn){
 
+var arrRes = [];
+
+for ( var i = 0; i < arr.length; i++ ){
+	arrRes.push(fn.(arr[i]));
+}
+
+return arrRes;
+}
+
+function calculateAge(el){
+	return 2018 - el ;
+
+}
+
+function isFullAge(limit,el){
+	return el >= limit;
+}
+
+var fullJapan = arrayCalc(years , isFullAge.bind(this , 20));
 
 
 
